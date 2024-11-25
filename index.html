@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Smoothie Machine</h1>
+        <p>Create your perfect smoothie!</p>
+    </header>
+
+    <main>
+        <form id="smoothie-form">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="size">Smoothie Size:</label>
+                <select id="size" name="size" required>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ingredients</legend>
+                <label>
+                    <input type="checkbox" name="ingredient" value="Strawberries"> Strawberries
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredient" value="Bananas"> Bananas
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredient" value="Blueberries"> Blueberries
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredient" value="Spinach"> Spinach
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredient" value="Almond Milk"> Almond Milk
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <label>
+                    <input type="radio" name="extra" value="Protein Powder" required> Protein Powder
+                </label>
+                <label>
+                    <input type="radio" name="extra" value="Honey"> Honey
+                </label>
+                <label>
+                    <input type="radio" name="extra" value="None" checked> None
+                </label>
+            </fieldset>
+
+            <button type="button" id="order-btn">Order</button>
+        </form>
+
+        <section id="order-summary">
+            <h2>Your Smoothie</h2>
+            <p id="smoothie-details">Your smoothie details will appear here!</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
